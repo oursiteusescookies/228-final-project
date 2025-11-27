@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <!-- created by Anna Dai -->
+    <meta charset="UTF-8">
+    <title>Anna's World</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .main-container {
+        width: 1440px;
+        margin: 0 auto;
+        background-color: lightgrey; /* fix later */
+      }
+      
+      .content {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+      }
+      
+      .hero {
+        width: 1200px;
+        height: 400px;
+        background-color: lightblue;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 32px;
+      }
+      
+      .nav { /* are u gonna leave this at the top? */
+        width: 1200px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-optical-sizing: auto;
+        background-color: white;
+        
+        position: sticky;
+        top: 0;
+      }
+      
+      .nav-ul { 
+        list-style-type: none;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .nav-ul li {
+        display: inline-block;
+        padding: 15px;
+      }
+      
+      .nav-ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+      }
+      
+      .nav-ul li a:hover {
+        background-color: lightblue;
+        color: white;
+        border-radius: 5px;
+      }
+      
+      .about {
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: white;
+        
+      }
+      
+       .physical-art {
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: lightblue;
+        
+      }
+      
+       .digital-art {
+        width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: darkblue;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+       <div class="nav">
+          <ul class="nav-ul">
+            <li><a href="#top">top</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#physical-art">physical art</a></li>
+            <li><a href="#digital-art">digital art</a></li>
+          </ul>
+        </div>
+      <div class="content">
+        <div class="hero" id="top"></div>
+        <div class="about" id="about"></div>
+        <div class="physical-art" id="physical-art"></div>
+        <div class="digital-art" id="digital-art"></div>  
+      </div>
+      
+    </div>
+  </body>
+</html>
