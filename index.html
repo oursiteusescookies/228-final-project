@@ -4,54 +4,61 @@
     <!-- created by Anna Dai -->
     <meta charset="UTF-8">
     <title>Anna's World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Finger+Paint&family=Jersey+10&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
       * {
         margin: 0;
         padding: 0;
-      
+
         box-sizing: border-box;
       }
-      
+
       html {
         scroll-behavior: smooth;
       }
-      
+
       body {
         font-family: Arial, sans-serif;
         font-size: 16px;
       }
-      
-      @font-face {
-        font-family: "Amoria";
-        src: url(amoria.otf) format('truetype');
-      }
-      
-     
+
+    @font-face {
+    font-family: "Amoria";
+    src: url(amoriaregular.woff) format('truetype');
+    }
+
+
       .main-container {
         width: 1440px;
         margin: 0 auto;
-        background-color: lightgrey; /* fix later */
+        background-color: lightgrey;
+        /* fix later */
       }
-      
+
       .content {
         width: 1200px;
         margin: 0 auto;
         background-color: white;
       }
-      
-       .nav { /* are u gonna leave this at the top? is it above everything else visually? */
+
+      .nav {
+        /* are u gonna leave this at the top? is it above everything else visually? */
         width: 1200px;
         margin: 0 auto;
         font-family: Arial, sans-serif;
         font-optical-sizing: auto;
         background-color: white;
-        
+
         position: sticky;
         top: 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 100;
+        /* puts navbar in front */
       }
-      
+
       .hero {
         width: 1200px;
         height: 600px;
@@ -61,21 +68,21 @@
         justify-content: center;
         color: white;
         font-size: 32px;
-        
+
         scroll-margin-top: 80px;
         overflow: hidden;
         position: relative;
       }
-      
-      .hero video { 
+
+      .hero video {
         position: absolute;
         margin: 0 auto;
         width: 1200px;
         height: 700px;
         z-index: 1;
       }
-      
-       .hero h1 {
+
+      .hero h1 {
         font-family: "Amoria", serif;
         font-weight: 1;
         font-size: 200px;
@@ -83,37 +90,39 @@
         color: white;
         text-align: center;
         z-index: 2;
-        text-shadow: 5px 7px 10px rgba(0,90,150,0.8)
-      } 
-      
-     
-      .nav-ul { 
+        text-shadow: 5px 7px 10px rgba(0, 100, 170, 0.7)
+      }
+
+
+      .nav-ul {
         list-style-type: none;
         overflow: hidden;
         text-align: center;
         margin: 0;
       }
-      
+
       .nav-ul li {
         display: inline-block;
         padding: 15px;
       }
-      
+
       .nav-ul li a {
         display: inline-block;
         padding: 10px 20px;
         text-decoration: none;
         color: black;
       }
-      
+
       .nav-ul li a:hover {
         background-color: lightblue;
         color: white;
         border-radius: 5px;
         transition: 0.2s;
       }
-      
-      .about, .physical-art, .digital-art {
+
+      .about,
+      .physical-art,
+      .digital-art {
         width: 1200px;
         margin: 0 auto;
         scroll-margin-top: 80px;
@@ -122,46 +131,43 @@
       .about {
         background-color: white;
         height: 700px;
-       
+
       }
-      
-       .physical-art {
+
+      .physical-art {
         background-color: lightblue;
-         height: 1000px;
+        height: 1000px;
       }
-      
-       .digital-art {
+
+      .digital-art {
         background-color: darkblue;
         height: 1000px;
       }
-      
-      
-      
     </style>
   </head>
   <body>
     <div class="main-container">
-       <div class="nav">
-          <ul class="nav-ul">
-            <li><a href="#top">top</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#physical-art">physical art</a></li>
-            <li><a href="#digital-art">digital art</a></li>
-          </ul>
-        </div>
+      <div class="nav">
+        <ul class="nav-ul">
+          <li><a href="#top">top</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#physical-art">physical art</a></li>
+          <li><a href="#digital-art">digital art</a></li>
+        </ul>
+      </div>
       <div class="content">
         <div class="hero" id="top">
-        <video autoplay loop muted>
-          <source src="clouds.mp4" type="video/mp4">
-        </video>
-          
+          <video autoplay loop muted>
+            <source src="clouds.mp4" type="video/mp4">
+          </video>
+
           <h1>ANNA'S WORLD</h1>
-      </div>
+        </div>
         <div class="about" id="about"></div>
         <div class="physical-art" id="physical-art"></div>
-        <div class="digital-art" id="digital-art"></div>  
+        <div class="digital-art" id="digital-art"></div>
       </div>
-      
+
     </div>
   </body>
 </html>
