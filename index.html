@@ -4,9 +4,9 @@
     <!-- created by Anna Dai -->
     <meta charset="UTF-8">
     <title>Anna's World</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Finger+Paint&family=Jersey+10&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jersey+10&family=Jersey+25&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Glitch&family=Tiny5&display=swap" rel="stylesheet">
     
     <style>
       * {
@@ -21,15 +21,9 @@
       }
 
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Jersey 25", sans-serif;
         font-size: 16px;
       }
-
-    @font-face {
-    font-family: "Amoria";
-    src: url(amoriaregular.woff) format('truetype');
-    }
-
 
       .main-container {
         width: 1440px;
@@ -55,8 +49,7 @@
         position: sticky;
         top: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        /* puts navbar in front */
+        z-index: 100; /* puts navbar in front */
       }
 
       .hero {
@@ -83,16 +76,19 @@
       }
 
       .hero h1 {
-        font-family: "Amoria", serif;
-        font-weight: 1;
-        font-size: 200px;
+        font-family: "Jersey 25", sans-serif;
+        font-size: 180px;
+        font-weight: 500;
         line-height: 1;
         color: white;
         text-align: center;
         z-index: 2;
         text-shadow: 5px 7px 10px rgba(0, 100, 170, 0.7)
       }
-
+      
+      h2 {
+        font-family: "Merriweather", serif;
+      }
 
       .nav-ul {
         list-style-type: none;
@@ -161,9 +157,17 @@
             <source src="clouds.mp4" type="video/mp4">
           </video>
 
-          <h1>ANNA'S WORLDd</h1>
+          <h1>ANNA'S<br>WORLD</h1>
         </div>
-        <div class="about" id="about"></div>
+        
+        <div class="about" id="about">
+        <h2>
+          about
+          </h2>
+          <p>
+            hello, 
+          </p>
+        </div>
         <div class="physical-art" id="physical-art"></div>
         <div class="digital-art" id="digital-art"></div>
       </div>
