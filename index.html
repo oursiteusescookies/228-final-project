@@ -44,6 +44,13 @@
         font-size: 32px;
         
         scroll-margin-top: 80px;
+        overflow: hidden;
+      }
+      
+      .hero video { 
+        margin: 0 auto;
+        width: 1200px;
+        height: 700px;
       }
       
       .nav { /* are u gonna leave this at the top? */
@@ -121,7 +128,12 @@
           </ul>
         </div>
       <div class="content">
-        <div class="hero" id="top"></div>
+        <div class="hero" id="top">
+        <video autoplay loop muted>
+          <source src="clouds.mp4" type="video/mp4">
+        </video>
+        <div>Anna's World</div>
+      </div>
         <div class="about" id="about"></div>
         <div class="physical-art" id="physical-art"></div>
         <div class="digital-art" id="digital-art"></div>  
