@@ -23,8 +23,10 @@
       body {
         font-family: "Jersey 25", sans-serif;
         font-size: 30px;
+        line-height: 1.2;
+        color: #1f74b5;
       }
-
+      
       .main-container {
         width: 1440px;
         height: auto;
@@ -112,7 +114,7 @@
         z-index: 2;
         text-shadow: 5px 7px 10px rgba(0, 100, 170, 0.7)
       }
-      
+
       .about,
       .contact,
       .physical-art,
@@ -139,7 +141,6 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        color: blue;
       }
 
       .about-row-item p {
@@ -148,9 +149,9 @@
         padding-bottom: 70px;
         text-align: right;
         line-height: 1.2;
-        color: #1f74b5;
+        
       }
-      
+
       .about h2 {
         font-family: "Merriweather", serif;
         font-size: 3.5em;
@@ -164,46 +165,46 @@
 
 
       /* PHYSICAL ART */
-     
+
       .physical-art {
         background-color: lightblue;
         margin: 60px 0px;
       }
-        
-        
-        .physical-art video {
+
+
+      .physical-art video {
         position: absolute;
         margin: 0 auto;
-        width: 1250px;
+        width: 1200px;
         height: 700px;
         z-index: 0;
       }
-   
-      
+
+
       .physical-art-row1 {
         display: flex;
         position: relative;
         gap: 76px;
         z-index: 1;
       }
-      
+
       .physical-art-row1 img {
         height: 300px;
         margin-top: -50px;
       }
-      
-      
+
+
       .physical-art-row2 {
         display: flex;
         position: relative;
         z-index: 1;
-      } 
-      
+      }
+
       .physical-art-row2 img {
         height: 400px;
       }
-      
-       .physical-art h3 {
+
+      .physical-art h3 {
         font-family: "Rock 3D", sans-serif;
         color: #001975;
         font-size: 2.7em;
@@ -211,6 +212,7 @@
         padding-top: 60px;
       }
       
+     
       .physical-art p {
         padding-right: 60px;
         padding-left: 30px;
@@ -220,20 +222,39 @@
         line-height: 1.2;
         color: #1f74b5;
       }
-      
+
       .physical-art-gallery {
-        display: flex;
-        gap: 20px;
+        display: grid;
+        background-color: white;
+        margin: auto;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+      }
+
+      .physical-art-gallery div {
+        padding-left: 30px;
+         padding-right: 30px;
+        padding-top: 30px;
+        margin: 20px;
+      }
+
+      .physical-art-gallery img {
+        width: 80%;
+      }
+
+ .physical-art-gallery h4 {
+        font-family: "Merriweather", serif;
+        font-size: 1.1em;
+        color: #001975;
+   padding: 10px;
       }
       
-      .physical-art-gallery-item {
-        width: 50%;
-        background-color: grey;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
+      .physical-art-gallery p {
+        font-size: 0.8em;
+          padding-left: 20px;
+        padding-right: 20px;
       }
+
 
 
 
@@ -302,47 +323,89 @@
         </div>
 
         <div class="physical-art" id="physical-art">
-          <video autoplay loop muted><source src="clouds physical.mp4" type="video/mp4"></video>
+          <video autoplay loop muted>
+            <source src="clouds physical art.mp4" type="video/mp4">
+          </video>
           <div class="physical-art-row1">
-           <div class="grid-item">
-            <h3>PHYSICAL ART</h3>
+            <div class="grid-item">
+              <h3>PHYSICAL ART</h3>
+            </div>
+            <div class="grid-item">
+              <img src="fish1.png" alt="fish painting">
+            </div>
           </div>
-          <div class="grid-item">
-            <img src="fish1.png" alt="fish painting">
-          </div>  
-          </div>
-         
+
           <div class="physical-art-row2">
             <div class="grid-item">
-               <img src="fish2.png" alt="fish painting">
-            </div> 
+              <img src="fish2.png" alt="fish painting">
+            </div>
             <div class="grid-item">
-            <p>
-              Take a look at my physical collection! <br><br>4 out of 7 of these were created in my last 5 months of grade 12, where I was tasked with exploring my chosen theme of surrealism.
-<br><br>
-For me, painting is an hours-long trance where I can shut off my mind and let my brush strokes lead the way. 
-            </p>
-          </div>         
+              <p>
+                Take a look at my physical collection! <br><br>4 out of 7 of these were created in my last 5 months of grade 12, where I was tasked with exploring my chosen theme of surrealism.
+                <br><br>
+                For me, painting is an hours-long trance where I can shut off my mind and let my brush strokes lead the way.
+              </p>
+            </div>
           </div>
         </div>
-        
+
         <div class="physical-art-gallery">
-          <div class="physical-art-gallery-row">
             <div class="grid-item">
-              img 1
+              <img src="shark attack.png" alt="painting of shark and dead elk">
+              <h4>"Shark Attack"</h4>
+              <p>
+                Acrylic paint on canvas. The first painting of my Surrealism series.
+              </p>
             </div>
             <div class="grid-item">
-              img 2
-          </div>
-        </div>
-           <div class="physical-art-gallery-row">
-            <div class="grid-item">
-              img 3
+              <img src="farmland.png" alt="farmland landscape with sealife in the sky">
+               <h4>"See Life Farmland"</h4>
+              <p>
+                Oil pastel on paper. You'll see a lot of my artworks contain animals and misplacement. One of my favourite visual concepts is sealife in places they shouldn't be. For instance, the sky.
+              </p>
             </div>
             <div class="grid-item">
-              img 4
-          </div>
-        </div>
+              <img src="ancient bath.png" alt="diorama of a human and dinosaur in a pond">
+               <h4>"Ancient Bath"</h4>
+              <p>
+               Floral foam and resin in a bowl. An ancient Chinese servant bathes a royal Guanlong. My most ambitious work of my Surrealism series. This was my first time using resin, and took a month of basement and art class time to make.
+              </p>
+            </div>
+            <div class="grid-item">
+              <img src="polluted.png" alt="painting of dead fish">
+               <h4>"Polluted"</h4>
+              <p>
+                Acrylic paint on a massive 24" x 12" canvas. This was from grade 11, but still one of my proudest works to this day.
+              </p>
+            </div>
+            <div class="grid-item">
+              <img src="jester.png" alt="painting of jester with a balloon assault rifle">
+               <h4>"Jester"</h4>
+              <p>
+                Acrylic paint on canvas. My last painting of high school and my series. Rushed by deadlines, but still perfected by long days in the basement.
+              </p>
+            </div>
+            <div class="grid-item">
+              <img src="cracked.png" alt="painting of cracked egg with an iris for yolk">
+               <h4>"Cracked"</h4>
+              <p>
+                Acrylic paint on a vinyl record. A self-portrait, of course! It's from grade 11 so not part of my series, but still an icon. 
+              </p>
+            </div>
+             <div class="grid-item">
+              <img src="survival.png" alt="painting of aftermath of wolf hunting sheep">
+                <h4>"Survival"</h4>
+              <p>
+                Acrylic paint on sketchbook paper. One of my sketchbook prompt assignments from grade 11. Completed not in the basement, but undoubtedly at a late hour with a podcast in my ears.
+              </p>
+            </div>
+           <div class="grid-item">
+              <img src="sheep.JPG" alt="illustration of nauseous sheep">
+              <h4>"Nausea"</h4>
+              <p>
+                Markers on sketchbook paper. This is the only marker work in this gallery, but I actually used markers so much in high school. They're easy to use and don't require any setup like painting! Perfect for impulsively staying up late.
+              </p>
+            </div>
         </div>
 
         <div class="digital-art" id="digital-art"></div>
