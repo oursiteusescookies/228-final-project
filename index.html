@@ -4,10 +4,10 @@
     <!-- created by Anna Dai -->
     <meta charset="UTF-8">
     <title>Anna's World</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jersey+10&family=Jersey+25&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Glitch&family=Tiny5&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jersey+10&family=Jersey+25&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Glitch&family=Tiny5&display=swap" rel="stylesheet">
+
     <style>
       * {
         margin: 0;
@@ -39,27 +39,56 @@
       }
 
       .nav {
-        /* are u gonna leave this at the top? is it above everything else visually? */
+        display: flex;
+        align-items: center;
         width: 1200px;
         margin: 0 auto;
-        font-family: Arial, sans-serif;
-        font-optical-sizing: auto;
-        background-color: white;
-
+        font-family: "Jersey 10", sans-serif;
+        font-size: 30px;
+        background-color: #def1ff;
+        
         position: sticky;
         top: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 100; /* puts navbar in front */
+        z-index: 100;
       }
+
+      .nav-logo {
+        height: 73px;
+        display: block;  
+      }
+
+      .nav-ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-ul li a {
+        display: block;
+        padding: 20px 30px;
+        text-decoration: none;
+        color: #005aa8;
+      }
+
+      .nav-ul li a:hover {
+        background-color: #91e0ff;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
 
       .hero {
         width: 1200px;
-        height: 600px;
+        height: 700px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
         font-size: 32px;
+        margin-bottom: -1px;
 
         scroll-margin-top: 80px;
         overflow: hidden;
@@ -84,35 +113,9 @@
         z-index: 2;
         text-shadow: 5px 7px 10px rgba(0, 100, 170, 0.7)
       }
-      
+
       h2 {
         font-family: "Merriweather", serif;
-      }
-
-      .nav-ul {
-        list-style-type: none;
-        overflow: hidden;
-        text-align: center;
-        margin: 0;
-      }
-
-      .nav-ul li {
-        display: inline-block;
-        padding: 15px;
-      }
-
-      .nav-ul li a {
-        display: inline-block;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: black;
-      }
-
-      .nav-ul li a:hover {
-        background-color: lightblue;
-        color: white;
-        border-radius: 5px;
-        transition: 0.2s;
       }
 
       .about,
@@ -129,7 +132,7 @@
         height: 700px;
 
       }
-     
+
       .physical-art {
         background-color: lightblue;
         height: 1000px;
@@ -139,30 +142,35 @@
         background-color: darkblue;
         height: 1000px;
       }
+
       .contact {
         background-color: grey;
         height: 600px;
       }
-      
+
       footer {
         background-color: black;
         height: 500px;
       }
-      
     </style>
   </head>
   <body>
     <div class="main-container">
-      
+
       <div class="content">
-         <div class="nav">
-        <ul class="nav-ul">
-          <li><a href="#top">top</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#physical-art">physical art</a></li>
-          <li><a href="#digital-art">digital art</a></li>          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div> 
+        <div class="nav">
+          <a href="#top">
+            <img src="logo.png" alt="eye logo" class="nav-logo">
+          </a>
+          <ul class="nav-ul">
+            <li><a href="#top">top</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#physical-art">physical art</a></li>
+            <li><a href="#digital-art">digital art</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+
         <div class="hero" id="top">
           <video autoplay loop muted>
             <source src="clouds.mp4" type="video/mp4">
@@ -170,20 +178,20 @@
 
           <h1>ANNA'S<br>WORLD</h1>
         </div>
-        
-      
+
+
         <div class="about" id="about">
-         <img src="eye.png" alt="painting of cracked egg with an iris for yolk" style="width: 50%">
+          <img src="eye.png" alt="painting of cracked egg with an iris for yolk" style="width: 50%">
           <h2>
-          about
+            about
           </h2>
           <p>
-            hello, 
+            hello,
           </p>
         </div>
-   
+
         <div class="physical-art" id="physical-art"></div>
-        <div class="digital-art" id="digital-art"></div>  
+        <div class="digital-art" id="digital-art"></div>
         <div class="contact" id="contact"></div>
       </div>
 
