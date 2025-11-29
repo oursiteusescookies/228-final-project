@@ -22,11 +22,12 @@
 
       body {
         font-family: "Jersey 25", sans-serif;
-        font-size: 16px;
+        font-size: 30px;
       }
 
       .main-container {
         width: 1440px;
+        height: auto;
         margin: 0 auto;
         background-color: lightgrey;
         /* fix later */
@@ -46,7 +47,7 @@
         font-family: "Jersey 10", sans-serif;
         font-size: 30px;
         background-color: #def1ff;
-        
+
         position: sticky;
         top: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +56,7 @@
 
       .nav-logo {
         height: 73px;
-        display: block;  
+        display: block;
       }
 
       .nav-ul {
@@ -114,6 +115,9 @@
 
       h2 {
         font-family: "Merriweather", serif;
+        font-size: 4em;
+        padding: 60px;
+        margin-left: 130px
       }
 
       .about,
@@ -126,9 +130,26 @@
       }
 
       .about {
+        /* grid-2x1 */
         background-color: white;
         height: 700px;
 
+      }
+
+      .about-row {
+        /* grid-2x1-row */
+        display: flex;
+        gap: 20px;
+      }
+
+      .about-row-item {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: blue;
       }
 
       .physical-art {
@@ -179,14 +200,23 @@
 
 
         <div class="about" id="about">
-          <img src="eye.png" alt="painting of cracked egg with an iris for yolk" style="width: 50%">
-          <h2>
-            about
-          </h2>
-          <p>
-            hello,
-          </p>
+          <div class="about-row">
+            <about-row-item>
+              <img src="eye.png" alt="painting of cracked egg with an iris for yolk">
+            </about-row-item>
+            <about-row-item>
+              <h2><i></i>
+                about
+              </h2>
+              <p>
+                hello,
+              </p>
+
+            </about-row-item>
+          </div>
         </div>
+
+
 
         <div class="physical-art" id="physical-art"></div>
         <div class="digital-art" id="digital-art"></div>
