@@ -115,9 +115,12 @@
 
       h2 {
         font-family: "Merriweather", serif;
-        font-size: 4em;
-        padding: 60px;
-        margin-left: 130px
+        font-size: 3.5em;
+        padding: 40px;
+        padding-right: 60px;
+        text-align: right;
+        margin-left: 130px;
+        color: #005aa8;
       }
 
       .about,
@@ -132,24 +135,26 @@
       .about {
         /* grid-2x1 */
         background-color: white;
-        height: 700px;
-
       }
 
       .about-row {
         /* grid-2x1-row */
         display: flex;
-        gap: 20px;
+        gap: 5px; /* delete later */
       }
 
       .about-row-item {
         width: 50%;
-        height: 400px;
-        background-color: grey;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         color: blue;
+      }
+      
+      .about-row-item p {
+        padding-right: 60px;
+        padding-left: 30px;
+        text-align: right;
+        color: #1f74b5;
       }
 
       .physical-art {
@@ -200,19 +205,24 @@
 
 
         <div class="about" id="about">
+
           <div class="about-row">
-            <about-row-item>
+            <div class="about-row-item">
               <img src="eye.png" alt="painting of cracked egg with an iris for yolk">
-            </about-row-item>
-            <about-row-item>
-              <h2><i></i>
+            </div>
+
+            <div class="about-row-item">
+              <h2>
                 about
               </h2>
               <p>
-                hello,
-              </p>
+                Hello, I’m Anna, a Waterloo GBDA student from Edmonton, Alberta.<br><br>
 
-            </about-row-item>
+                Welcome to my art gallery!
+                Here, you’ll find creations from high school to university. Mediums range from painting to 3D models to magazine spreads.
+              </p>
+            </div>
+
           </div>
         </div>
 
