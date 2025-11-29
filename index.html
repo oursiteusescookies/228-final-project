@@ -116,6 +116,7 @@
       }
 
       .about,
+      .contact,
       .physical-art,
       .digital-art {
         width: 1200px;
@@ -128,7 +129,7 @@
         height: 700px;
 
       }
-
+     
       .physical-art {
         background-color: lightblue;
         height: 1000px;
@@ -138,18 +139,21 @@
         background-color: darkblue;
         height: 1000px;
       }
+      .contact {
+        background-color: grey;
+        height: 600px;
+      }
+      
+      footer {
+        background-color: black;
+        height: 500px;
+      }
+      
     </style>
   </head>
   <body>
     <div class="main-container">
-      <div class="nav">
-        <ul class="nav-ul">
-          <li><a href="#top">top</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#physical-art">physical art</a></li>
-          <li><a href="#digital-art">digital art</a></li>
-        </ul>
-      </div>
+      
       <div class="content">
         <div class="hero" id="top">
           <video autoplay loop muted>
@@ -159,17 +163,31 @@
           <h1>ANNA'S<br>WORLD</h1>
         </div>
         
+       <div class="nav">
+        <ul class="nav-ul">
+          <li><a href="#top">top</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#physical-art">physical art</a></li>
+          <li><a href="#digital-art">digital art</a></li>          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div> 
         <div class="about" id="about">
-        <h2>
-          <img src="eye.png" alt="painting of cracked egg with an iris for yolk" style="width: 50%">
+         <img src="eye.png" alt="painting of cracked egg with an iris for yolk" style="width: 50%">
+          <h2>
           about
           </h2>
           <p>
             hello, 
           </p>
         </div>
+   
         <div class="physical-art" id="physical-art"></div>
-        <div class="digital-art" id="digital-art"></div>
+        <div class="digital-art" id="digital-art"></div>  
+        <div class="contact" id="contact"></div>
+        <footer>
+        <h2>
+          Anything is possible with a little bit of creativity.
+          </h2></footer>
       </div>
 
     </div>
