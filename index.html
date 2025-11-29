@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Anna's World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jersey+10&family=Jersey+25&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rock+3D&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jersey+10&family=Jersey+25&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rock+3D&family=Rubik+Glitch&display=swap" rel="stylesheet">
 
     <style>
       * {
@@ -112,25 +112,7 @@
         z-index: 2;
         text-shadow: 5px 7px 10px rgba(0, 100, 170, 0.7)
       }
-
-      h2 {
-        font-family: "Merriweather", serif;
-        font-size: 3.5em;
-        padding: 40px;
-        padding-bottom: 15px;
-        padding-right: 60px;
-        text-align: right;
-        margin-left: 130px;
-        color: #005aa8;
-      }
       
-      h3 {
-        font-family: "Rock 3D", sans-serif;
-        color: white;
-        font-size: 2.5em;
-        padding-left: 60px;
-      }
-
       .about,
       .contact,
       .physical-art,
@@ -149,7 +131,8 @@
       .about-row {
         /* grid-2x1-row */
         display: flex;
-        gap: 5px; /* delete later */
+        gap: 5px;
+        /* delete later */
       }
 
       .about-row-item {
@@ -158,7 +141,7 @@
         flex-direction: column;
         color: blue;
       }
-      
+
       .about-row-item p {
         padding-right: 60px;
         padding-left: 30px;
@@ -167,19 +150,92 @@
         line-height: 1.2;
         color: #1f74b5;
       }
+      
+      .about h2 {
+        font-family: "Merriweather", serif;
+        font-size: 3.5em;
+        padding: 40px;
+        padding-bottom: 15px;
+        padding-right: 60px;
+        text-align: right;
+        margin-left: 130px;
+        color: #005aa8;
+      }
+
 
       /* PHYSICAL ART */
+     
       .physical-art {
         background-color: lightblue;
-        display: grid;
-        grid-template-columns: 70% 30%;
-        margin: auto;
+        margin: 60px 0px;
+      }
+        
+        
+        .physical-art video {
+        position: absolute;
+        margin: 0 auto;
+        width: 1250px;
+        height: 700px;
+        z-index: 0;
+      }
+   
+      
+      .physical-art-row1 {
+        display: flex;
+        position: relative;
+        gap: 76px;
+        z-index: 1;
       }
       
-      .physical-art div {
-        padding: 20px;
+      .physical-art-row1 img {
+        height: 300px;
+        margin-top: -50px;
       }
       
+      
+      .physical-art-row2 {
+        display: flex;
+        position: relative;
+        z-index: 1;
+      } 
+      
+      .physical-art-row2 img {
+        height: 400px;
+      }
+      
+       .physical-art h3 {
+        font-family: "Rock 3D", sans-serif;
+        color: #001975;
+        font-size: 2.7em;
+        padding-left: 60px;
+        padding-top: 60px;
+      }
+      
+      .physical-art p {
+        padding-right: 60px;
+        padding-left: 30px;
+        padding-bottom: 70px;
+        padding-top: 30px;
+        text-align: right;
+        line-height: 1.2;
+        color: #1f74b5;
+      }
+      
+      .physical-art-gallery {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .physical-art-gallery-item {
+        width: 50%;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+
 
       .digital-art {
         background-color: darkblue;
@@ -246,11 +302,49 @@
         </div>
 
         <div class="physical-art" id="physical-art">
-          <div class="grid-item">
+          <video autoplay loop muted><source src="clouds physical.mp4" type="video/mp4"></video>
+          <div class="physical-art-row1">
+           <div class="grid-item">
             <h3>PHYSICAL ART</h3>
+          </div>
+          <div class="grid-item">
+            <img src="fish1.png" alt="fish painting">
           </div>  
+          </div>
+         
+          <div class="physical-art-row2">
+            <div class="grid-item">
+               <img src="fish2.png" alt="fish painting">
+            </div> 
+            <div class="grid-item">
+            <p>
+              Take a look at my physical collection! <br><br>4 out of 7 of these were created in my last 5 months of grade 12, where I was tasked with exploring my chosen theme of surrealism.
+<br><br>
+For me, painting is an hours-long trance where I can shut off my mind and let my brush strokes lead the way. 
+            </p>
+          </div>         
+          </div>
         </div>
         
+        <div class="physical-art-gallery">
+          <div class="physical-art-gallery-row">
+            <div class="grid-item">
+              img 1
+            </div>
+            <div class="grid-item">
+              img 2
+          </div>
+        </div>
+           <div class="physical-art-gallery-row">
+            <div class="grid-item">
+              img 3
+            </div>
+            <div class="grid-item">
+              img 4
+          </div>
+        </div>
+        </div>
+
         <div class="digital-art" id="digital-art"></div>
         <div class="contact" id="contact"></div>
       </div>
