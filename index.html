@@ -253,7 +253,6 @@
       }
 
       .gallery .title {
-        font-family: "Merriweather", serif;
         font-size: 1.1em;
         padding: 10px;
       }
@@ -288,16 +287,13 @@
 
       .digital-art-header {
         background-color: darkblue;
-        height: 1000px;
-        display: flex;
-        position: relative;
+        display: grid;
+        grid-template-columns: 45% 55%;
       }
-      
-      .digital-art-header
 
       .digital-art-header img {
-        height: 1000px;
         margin-top: -150px;
+        width: 130%;
       }
 
       .digital-art-header h5 {
@@ -317,6 +313,11 @@
         color: #1f74b5;
       }
 
+      
+      
+      
+      
+      
       .contact {
         background-color: grey;
         height: 600px;
@@ -473,20 +474,48 @@
           <div class="grid-item">
             <img src="cottagepeek.png" alt="3d model of mushroom cottage">
           </div>
-          <div class="grid-item">
+           <div class="grid-item">
             <h5>
               DIGITAL ART
             </h5>
             <p>
-              Here are some of my works in the digital realm. The 3D models were made during high school, for my design courses.
-
-              My favourite kind of art is creating little snapshots of imaginary worlds, elements that seem like they have stories behind them.
+              Here are some of my digital works. The 3D models were made during high school, for my design courses.
+<br><br>
+              My favourite kind of art is creating little snapshots of imaginary worlds, elements that convey narratives.
             </p>
-          </div>
+          </div>    
         </div>
 
         <div class="gallery digital-art">
-
+          <div class="grid-item">
+            <img src="trail cam.png" alt="parasaurolophus trail-cam-esque illustration">
+            <h4 class="title">
+              "Trail Cam"
+            </h4>
+            <p class="caption">
+              Illustrated on Procreate.
+            </p>
+          </div>
+          
+          <div class="grid-item">
+            <img src="chester.png" alt="3d model of weird cat genie">
+            <h4 class="title">
+              "Chester"
+            </h4>
+            <p class="caption">
+              Blender model.
+            </p>
+          </div>
+          
+           <div class="grid-item">
+            <img src="mushroom cottage.png" alt="3d model of mushroom cottage">
+            <h4 class="title">
+              "Mushroom Cottage"
+            </h4>
+            <p class="caption">
+              Blender model.
+            </p>
+          </div>
         </div>
 
         <div class="contact" id="contact"></div>
