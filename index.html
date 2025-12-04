@@ -235,7 +235,6 @@
 
       .gallery {
         display: grid;
-        background-color: white;
         width: 1200px;
         padding: 30px;
         padding-left: 80px;
@@ -255,7 +254,7 @@
       .gallery img {
         width: 90%;
       }
-      
+
       .gallery .title {
         font-size: 1.1em;
         padding: 10px;
@@ -289,8 +288,20 @@
 
 
 
+      .digital-art {
+        background: linear-gradient(to bottom, #1A4961, #050911);
+        padding-bottom: 40px;
+      }
+      
+      .digital-art .caption {
+        color: #BEE7FB;
+      }
+      
+      .digital-art .title {
+        color: white;
+      }
+      
       .digital-art-header {
-        background-color: darkblue;
         display: grid;
         grid-template-columns: 45% 55%;
       }
@@ -316,13 +327,13 @@
         line-height: 1.2;
         color: #1f74b5;
       }
-      
-       .video-banner {
+
+      .video-banner {
         display: flex;
         gap: 0px;
         width: 100%;
       }
-      
+
       .video-banner video {
         height: 563.7px;
       }
@@ -330,16 +341,34 @@
       .screens {
         display: flex;
         gap: 20px;
-        margin: 60px;
+        margin-top: 60px;
+        margin-bottom: 30px;
         justify-content: center;
       }
-      
+
       .screens img {
         width: 20%;
       }
 
-
-
+      .screens-text {
+        text-align: center;
+        margin-bottom: 60px;
+      } 
+      
+      .screens-text a {
+        color: #529ceb;
+      }
+      
+      .screens-text a:hover {
+        color: white;
+        transition: 0.2s;
+      }
+      
+      .screens-text a:visited {
+        color: #7265f7;
+      }
+      
+      
 
 
 
@@ -497,7 +526,8 @@
           <img src="basementworks.png" alt="my works sitting together in the basement">
         </div>
 
-        <div class="digital-art-header" id="digital-art">
+        <div class="digital-art">
+          <div class="digital-art-header" id="digital-art">
           <div class="grid-item">
             <img src="cottagepeek.png" alt="3d model of mushroom cottage">
           </div>
@@ -513,7 +543,7 @@
           </div>
         </div>
 
-        <div class="gallery digital-art">
+        <div class="gallery">
           <div class="grid-item">
             <img src="trail cam.png" alt="parasaurolophus trail-cam-esque illustration">
             <h4 class="title">
@@ -554,30 +584,36 @@
               Blender model.
             </p>
           </div>
-
         </div>
 
- <div class="video-banner">
-             <video autoplay muted loop>
+        <div class="video-banner">
+          <video autoplay muted loop>
             <source src="cottage.mp4" type="video/mp4">
-          </video> 
-            <video autoplay muted loop>
+          </video>
+          <video autoplay muted loop>
             <source src="chester.mp4" type="video/mp4">
           </video>
-          </div>
-      
-          <div class="screens">
-            <img src="signup.png" alt="ui screens for clothing app">
-             <img src="HOME.png" alt="ui screens for clothing app">
-             <img src="add clothes.png" alt="ui screens for clothing app">
-             <img src="custom results.png" alt="ui screens for clothing app">
-           
         </div>
-         
-        <div class="caption">
-           <a href="https://www.figma.com/proto/wjOsPYtkmrWOpN7JYl7fLY/gbda-210-high-fidelity-prototyping?node-id=10-3&t=fqR6IpapXdcbXwG0-1" target="_blank">Pocket Closet</a>
+
+        <div class="screens">
+          <img src="signup.png" alt="ui screens for clothing app">
+          <img src="HOME.png" alt="ui screens for clothing app">
+          <img src="add clothes.png" alt="ui screens for clothing app">
+          <img src="custom results.png" alt="ui screens for clothing app">
         </div>
-            
+
+        <div class="screens-text">
+          <h4 class="title">
+            "Pocket Closet"
+          </h4>
+          <p class="caption">
+            An interactive working prototype made in Figma for a GBDA group project. Access it <a href="https://www.figma.com/proto/wjOsPYtkmrWOpN7JYl7fLY/gbda-210-high-fidelity-prototyping?node-id=10-3&t=fqR6IpapXdcbXwG0-1" target="_blank">
+              here.</a>
+          </p>
+        </div>
+        </div>
+        
+
 
         <div class="contact" id="contact"></div>
       </div>
