@@ -19,7 +19,7 @@
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 100px;
-        
+        /* some breathing space between nav bar and section */
       }
 
       body {
@@ -33,16 +33,16 @@
         width: 1440px;
         height: auto;
         margin: 0 auto;
-        background-color: lightgrey;
-        /* fix later */
+        background: linear-gradient(to bottom, white, #def1ff, #def1ff, #1a4c65, #0e3547);
       }
 
       .content {
         width: 1200px;
         margin: 0 auto;
-        background-color: white;
       }
 
+
+      /* NAV BAR */
       .nav {
         display: flex;
         align-items: center;
@@ -54,13 +54,15 @@
         background-color: #def1ff;
 
         position: fixed;
+        /* sticky was giving me problems */
         top: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* dropshadow */
         z-index: 100;
       }
 
       .nav-logo {
-        height: 73px;
+        height: 70px;
         display: block;
       }
 
@@ -71,7 +73,7 @@
 
       .nav-ul li a {
         display: block;
-        padding: 20px 30px;
+        padding: 10px 50px;
         text-decoration: none;
         color: #005aa8;
       }
@@ -94,7 +96,6 @@
         font-size: 32px;
         margin-bottom: -1px;
 
-        scroll-margin-top: 80px;
         overflow: hidden;
         position: relative;
       }
@@ -118,24 +119,23 @@
         text-shadow: 5px 7px 10px rgba(0, 25, 117, 1)
       }
 
+      /* page sections */
       .about,
       .contact,
       .physical-art,
       .digital-art {
         width: 1200px;
         margin: 0 auto;
-
       }
 
       /* ABOUT */
       .about {
         /* grid-2x1 */
         position: relative;
-        padding-bottom: 100px;       
+        padding-bottom: 100px;
         background-color: #E6F7FF;
-
       }
-      
+
       .about-bg {
         position: absolute;
         z-index: 1;
@@ -173,14 +173,12 @@
       }
 
 
-      /* PHYSICAL ART HEADER */
+      /* PHYSICAL ART HEADER, which is seperate from physical art gallery */
 
       .physical-art-header {
         margin: 0px;
         position: relative;
-
       }
-
 
       .physical-art-header video {
         position: absolute;
@@ -190,17 +188,18 @@
         height: 1000px;
         z-index: 0;
       }
-      
+
       .physical-art-header-gradient {
         position: absolute;
         top: 50px;
-  width: 100%;
-  height: 600px;
+        width: 100%;
+        height: 600px;
         background: linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(230, 247, 255, 1));
         z-index: 1;
       }
 
       .physical-art-header-row1 {
+        /* first row, with the title and first fish */
         display: flex;
         position: relative;
         gap: 42px;
@@ -212,8 +211,8 @@
         margin-top: -50px;
       }
 
-
       .physical-art-header-row2 {
+        /* second row, with the second fish and text */
         display: flex;
         position: relative;
         z-index: 1;
@@ -241,18 +240,17 @@
       }
 
 
-      /* GALLERY */
-
+      /* GALLERY, to be applied to both physical and digital gallery */
       .title {
         font-family: "Merriweather", serif;
         padding-top: 15px;
       }
-      
+
       .info {
         font-size: 0.7em;
         padding: 10px;
       }
-      
+
       .caption {
         font-size: 0.9em;
         text-align: justify;
@@ -280,6 +278,7 @@
         width: 100%;
       }
 
+      /* PHYSICAL ART GALLERY */
       .physical-art {
         background-color: #E6F7FF;
         padding-top: 60px;
@@ -292,7 +291,7 @@
       .physical-art .caption {
         color: #1f74b5;
       }
-      
+
       .physical-art .info {
         color: #5595C7;
       }
@@ -303,26 +302,24 @@
 
 
 
-
-
+      /* DIGITAL ART */
       .digital-art {
         background: linear-gradient(to bottom, #1A5265, #050911);
         padding-bottom: 40px;
-
       }
-      
+
       .digital-art .caption {
         color: #BEE7FB;
       }
-      
+
       .digital-art .title {
         color: white;
       }
-      
+
       .digital-art .info {
         color: #7EBCE3;
       }
-      
+
       .digital-art-header {
         display: grid;
         grid-template-columns: 45% 55%;
@@ -352,12 +349,13 @@
         line-height: 1.2;
         color: #BEE7FB
       }
-      
+
       .digital-art .gallery {
         padding-top: 100px;
       }
 
       .video-banner {
+        /* the 2 videos */
         display: flex;
         gap: 0px;
         width: 100%;
@@ -368,8 +366,9 @@
         height: 545px;
         z-index: 0;
       }
-      
+
       .screens {
+        /* for pocket closet */
         display: flex;
         gap: 20px;
         margin-top: 20px;
@@ -386,29 +385,26 @@
         margin-bottom: 100px;
         padding-left: 180px;
         padding-right: 180px;
-      } 
+      }
 
-      
       .screens-text a {
         color: #59DBF2;
       }
-      
+
       .screens-text a:hover {
         color: white;
         transition: 0.2s;
       }
-      
-    
 
+
+      /* CONTACT */
       .contact {
         background-color: #E6F7FF;
-      } 
+      }
 
       .contact-row {
         /* grid-2x1-row */
         display: flex;
-        gap: 5px;
-        /* delete later */
       }
 
       .contact-row-item {
@@ -416,8 +412,9 @@
         display: flex;
         flex-direction: column;
       }
-      
+
       .contact-row-item img {
+        /* overlapping globe icon */
         margin-top: -30px;
         width: 120%;
       }
@@ -438,20 +435,20 @@
         padding-right: 60px;
         text-align: right;
         margin-left: 130px;
-        color: #005aa8;
+        color: #001975;
       }
-      
+
       .contact a {
         color: #001975;
         text-decoration: underline overline;
       }
-      
+
       .contact a:hover {
         background-color: white;
-        color: #1f74b5;;
+        color: #1f74b5;
+        ;
         transition: 0.2s;
       }
-
     </style>
   </head>
   <body>
@@ -484,9 +481,9 @@
           <div class="about-bg">
             <img src="aboutheader.png" alt="blue background with clouds peeking through">
           </div>
- 
+
           <div class="about-row">
-           
+
             <div class="about-row-item">
               <img src="eye.png" alt="painting of cracked egg with an iris for yolk">
             </div>
@@ -509,10 +506,10 @@
           <video autoplay loop muted>
             <source src="clouds bg 2.mp4" type="video/mp4">
           </video>
-          
+
           <div class="physical-art-header-gradient">
           </div>
-          
+
           <div class="physical-art-header-row1">
             <div class="grid-item">
               <h3>PHYSICAL ART</h3>
@@ -530,7 +527,7 @@
               <p>
                 Behold, my physical collection! <br><br>Four of these were created in my last semester of grade 12, where I explored my chosen theme of Surrealism. I went about this by juxtaposing familiar settings with unexpected items and creating pieces that felt like windows to other worlds.
                 <br><br>
-                As for mediums, I'm most comfortable with markers, acrylic paint, and graphite. I definitely prefer traditional illustration over digital. 
+                As for mediums, I'm most comfortable with markers, acrylic paint, and graphite. I definitely prefer traditional illustration over digital.
               </p>
             </div>
           </div>
@@ -543,14 +540,14 @@
             <h6 class="info"><i> Acrylic on 24" x 24" canvas, 2024</i>
             </h6>
             <p class="caption">
-              The first painting to start off my Surrealism series in grade 12. I really like the idea of sea animals swimming over land. You'll see this theme of misplacement continue in my other Surrealism works. 
+              The first painting to start off my Surrealism series in grade 12. I really like the idea of sea animals swimming over land. You'll see this theme of misplacement continue in my other Surrealism works.
             </p>
           </div>
           <div class="grid-item">
             <img src="polluted.png" alt="painting of dead fish">
             <h4 class="title"><i>"Polluted"</i></h4>
-             <h6 class="info">
-              <i> Acrylic on 30" x 24" canvas, 2023</i>        
+            <h6 class="info">
+              <i> Acrylic on 30" x 24" canvas, 2023</i>
             </h6>
             <p class="caption">
               This is my biggest painting ever!!! It was pretty daunting at first, but after a while I got to appreciate how in-detail the canvas size enabled me to go. It's from grade 11, and still one of my proudest works to this day. I really don't know I pulled this off... I'd probably hurt myself trying to recreate it now.
@@ -561,10 +558,10 @@
             <img src="ancient bath.png" alt="diorama of a human and dinosaur in a pond">
             <h4 class="title"><i>"Ancient Bath"</i></h4>
             <h6 class="info">
-              <i> Floral foam and resin in a bowl, 2024</i>        
+              <i> Floral foam and resin in a bowl, 2024</i>
             </h6>
             <p class="caption">
-              An ancient Chinese servant bathes a royal Guanlong. This was the most ambitious project in my series. I'd been wanting to make a dinosaur diorama since I was a kid, so this was me living out that dream. It was my first time using resin, and took a month of basement and art class time to make. 
+              An ancient Chinese servant bathes a royal Guanlong. This was the most ambitious project in my series. I'd been wanting to make a dinosaur diorama since I was a kid, so this was me living out that dream. It was my first time using resin, and took a month of basement and art class time to make.
             </p>
           </div>
 
@@ -572,7 +569,7 @@
             <img src="jester.png" alt="painting of jester with a balloon assault rifle">
             <h4 class="title"><i>"Jester"</i></h4>
             <h6 class="info">
-              <i> Acrylic on 16" x 20" canvas, 2024</i>        
+              <i> Acrylic on 16" x 20" canvas, 2024</i>
             </h6>
             <p class="caption">
               My last painting of high school. Rushed by deadlines, but still perfected by long days down in the basement. This came out edgier than intended, but I really wanted to go beyond my theme of misplacement and paint a juxtaposition no one's seen before.
@@ -581,8 +578,8 @@
           <div class="grid-item">
             <img src="farmland.png" alt="farmland landscape with sealife in the sky">
             <h4 class="title"><i>"A Special Place"</i></h4>
-             <h6 class="info">
-              <i> Oil pastel on paper, 2024</i>        
+            <h6 class="info">
+              <i> Oil pastel on paper, 2024</i>
             </h6>
             <p class="caption">
               This was one of my simpler illustrations. It served mainly as a quick breather during and after my resin bowl project, when I was waiting for the resin to dry. I was aiming for a sense of nostalgia and natural harmony in this work.
@@ -591,32 +588,32 @@
           <div class="grid-item">
             <img src="sheep.JPG" alt="illustration of nauseous sheep">
             <h4 class="title"><i>"Nausea"</i></h4>
-             <h6 class="info">
-              <i> Markers on 8.5" x 11" sketchbook paper, 2024</i>    
+            <h6 class="info">
+              <i> Markers on 8.5" x 11" sketchbook paper, 2024</i>
             </h6>
             <p class="caption">
-             I relied on markers so much in high school. They're clean and don't require any tedious setup like painting, so they're perfect for quickly illustrating ideas or feelings late at night.
+              I relied on markers so much in high school. They're clean and don't require any tedious setup like painting, so they're perfect for quickly illustrating ideas or feelings late at night.
             </p>
           </div>
           <div class="grid-item">
             <img src="survival.png" alt="painting of aftermath of wolf hunting sheep">
             <h4 class="title"><i>"Survival"</i></h4>
-             <h6 class="info">
-              <i> Acrylic on 8.5" x 11" sketchbook paper, 2023</i>     
+            <h6 class="info">
+              <i> Acrylic on 8.5" x 11" sketchbook paper, 2023</i>
             </h6>
             <p class="caption">
-            One of my sketchbook prompts from grade 11. I was short on time and I definitely didn't need to go so in detail for this assignment, but I enjoyed the concept so much I just couldn't help myself and wanted to make it perfect.
+              One of my sketchbook prompts from grade 11. I was short on time and I definitely didn't need to go so in detail for this assignment, but I enjoyed the concept so much I just couldn't help myself and wanted to make it perfect.
             </p>
           </div>
 
           <div class="grid-item">
             <img src="cracked.png" alt="painting of cracked egg with an iris for yolk">
             <h4 class="title"><i>"Cracked"</i></h4>
-             <h6 class="info">
-              <i> Acrylic on an 11.5" x 11.5" vinyl record, 2023</i>  
+            <h6 class="info">
+              <i> Acrylic on an 11.5" x 11.5" vinyl record, 2023</i>
             </h6>
             <p class="caption">
-             This is what I look like! It's from grade 11 so it's not part of my Surrealism series, but still an icon. It's on an old vinyl record, but unfortunately, you can't play it.
+              This is what I look like! It's from grade 11 so it's not part of my Surrealism series, but still an icon. It's on an old vinyl record, but unfortunately, you can't play it.
             </p>
           </div>
 
@@ -627,114 +624,114 @@
 
         <div class="digital-art">
           <div class="digital-art-header" id="digital-art">
-          <div class="grid-item">
-            <img src="cottagepeeking.png" alt="3d model of mushroom cottage">
+            <div class="grid-item">
+              <img src="cottagepeeking.png" alt="3d model of mushroom cottage">
+            </div>
+            <div class="grid-item">
+              <h5>
+                DIGITAL ART
+              </h5>
+              <p>
+                My digital works!
+                <br><br>I learned how to use Blender during my Design courses in high school.
+                My favourite kind of art is creating little snapshots of imaginary worlds, elements that convey narratives.
+              </p>
+            </div>
           </div>
-          <div class="grid-item">
-            <h5>
-              DIGITAL ART
-            </h5>
-            <p>
-              My digital works!
-              <br><br>I learned how to use Blender during my Design courses in high school. 
-              My favourite kind of art is creating little snapshots of imaginary worlds, elements that convey narratives.
-            </p>
-          </div>
-        </div>
 
-        <div class="video-banner">
-         
-          <video autoplay muted loop>
-            <source src="chester.mp4" type="video/mp4">
-          </video> 
-          
-          <video autoplay muted loop>
-            <source src="cottage.mp4" type="video/mp4">
-          </video>
-        </div>
-          
- <div class="gallery">
-           
-          <div class="grid-item">
-            <img src="chester.png" alt="3d model of weird cat genie">
-            <h4 class="title">
-              <i>"Chestshire Cat"</i>
-            </h4>
+          <div class="video-banner">
+
+            <video autoplay muted loop>
+              <source src="chester.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay muted loop>
+              <source src="cottage.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="gallery">
+
+            <div class="grid-item">
+              <img src="chester.png" alt="3d model of weird cat genie">
+              <h4 class="title">
+                <i>"Chestshire Cat"</i>
+              </h4>
               <h6 class="info">
-              <i> 3D model on Blender, 2022</i>  
-            </h6>
-            <p class="caption">
-             An ominous, ever-smiling cat genie with mouths for eyes! He lives attached to a chest in the woods and smites those who are mean to him. I wanted to convey hints of narrative with an unsettling character design.
-            </p>
+                <i> 3D model on Blender, 2022</i>
+              </h6>
+              <p class="caption">
+                An ominous, ever-smiling cat genie with mouths for eyes! He lives attached to a chest in the woods and smites those who are mean to him. I wanted to convey hints of narrative with an unsettling character design.
+              </p>
+            </div>
+
+            <div class="grid-item">
+              <img src="mushroom cottage.png" alt="3d model of mushroom cottage">
+              <h4 class="title"><i>"Mushroom Cottage"</i>
+              </h4>
+              <h6 class="info">
+                <i> 3D model on Blender, 2022</i>
+              </h6>
+              <p class="caption">
+                One of my first ever Blender models! It's really old, made for an assignment all the way back in grade 10. It's such a humble cottage you'd imagine there's not <i>mushroom</i> in there, but perhaps you'd be surprised!
+              </p>
+            </div>
+
+            <div class="grid-item">
+              <img src="trail cam.png" alt="parasaurolophus trail-cam-esque illustration">
+              <h4 class="title">
+                <i>"Trail Cam"</i>
+              </h4>
+              <h6 class="info">
+                <i> Digital illustration on Procreate, 2025</i>
+              </h6>
+              <p class="caption">
+                Just another one of those ideas that you put off for months or years and impulsively decide to commit to it on a random night. This is the first university work featured in this gallery... I probably should have been doing schoolwork instead, but at least it's pretty.
+              </p>
+            </div>
+
+            <div class="grid-item">
+              <img src="poop mouth.png" alt="vector illustration of childhood photo">
+              <h4 class="title">
+                <i>"Popsicle"</i>
+              </h4>
+              <h6 class="info">
+                <i> Vector illustration on Adobe Illustrator, 2022</i>
+              </h6>
+              <p class="caption">
+                This was from an assignment in grade 10, where I traced over a childhood photograph with Illustrator shapes. I really like how this came out and I'm glad I went so in-detail, even if I was cursing at myself for it back then.
+              </p>
+            </div>
+
+
+
           </div>
-   
-   <div class="grid-item">
-            <img src="mushroom cottage.png" alt="3d model of mushroom cottage">
-            <h4 class="title"><i>"Mushroom Cottage"</i>
-            </h4>
-      <h6 class="info">
-              <i> 3D model on Blender, 2022</i>  
-            </h6>
-            <p class="caption">
-              One of my first ever Blender models! It's really old, made for an assignment all the way back in grade 10. It's such a humble cottage you'd imagine there's not <i>mushroom</i> in there, but perhaps you'd be surprised!
-            </p>
+
+
+          <div class="screens">
+            <img src="signup.png" alt="ui screens for clothing app">
+            <img src="HOME.png" alt="ui screens for clothing app">
+            <img src="add clothes.png" alt="ui screens for clothing app">
+            <img src="custom results.png" alt="ui screens for clothing app">
           </div>
-   
-   <div class="grid-item">
-            <img src="trail cam.png" alt="parasaurolophus trail-cam-esque illustration">
+
+          <div class="screens-text">
             <h4 class="title">
-              <i>"Trail Cam"</i>
+              <i>"Pocket Closet"</i>
             </h4>
-      <h6 class="info">
-              <i> Digital illustration on Procreate, 2025</i>  
+            <h6 class="info">
+              <i> Interactive app prototype on Figma, 2025</i>
             </h6>
             <p class="caption">
-              Just another one of those ideas that you put off for months or years and impulsively decide to commit to it on a random night. This is the first university work featured in this gallery... I probably should have been doing schoolwork instead, but at least it's pretty.
+              The most recent and last addition in this gallery, a group project that's still ongoing at the time I'm writing this! We're expected to finish on December 8 2025. It's the UI design for a wardrobe curation app that you can build and generate outfits on. We started 4 months ago, from researching and ideation to now finalizing our high-fidelity working prototype. Try it out <a href="https://www.figma.com/proto/wjOsPYtkmrWOpN7JYl7fLY/gbda-210-high-fidelity-prototyping?node-id=10-3&t=fqR6IpapXdcbXwG0-1" target="_blank">
+                here!</a>
             </p>
           </div>
-
-          <div class="grid-item">
-            <img src="poop mouth.png" alt="vector illustration of childhood photo">
-            <h4 class="title">
-              <i>"Popsicle"</i>
-            </h4>
-             <h6 class="info">
-              <i> Vector illustration on Adobe Illustrator, 2022</i>  
-            </h6>
-            <p class="caption">
-              This was from an assignment in grade 10, where I traced over a childhood photograph with Illustrator shapes. I really like how this came out and I'm glad I went so in-detail, even if I was cursing at myself for it back then.
-            </p>
-          </div>
-
-         
-
-        </div>
-
-       
-        <div class="screens">
-          <img src="signup.png" alt="ui screens for clothing app">
-          <img src="HOME.png" alt="ui screens for clothing app">
-          <img src="add clothes.png" alt="ui screens for clothing app">
-          <img src="custom results.png" alt="ui screens for clothing app">
-        </div>
-
-        <div class="screens-text">
-          <h4 class="title">
-            <i>"Pocket Closet"</i>
-          </h4>
-           <h6 class="info">
-              <i> Interactive app prototype on Figma, 2025</i>  
-            </h6>
-          <p class="caption">
-           The most recent and last addition in this gallery, a group project that's still ongoing at the time I'm writing this! We're expected to finish on December 8 2025. It's the UI design for a wardrobe curation app that you can build and generate outfits on. We started 4 months ago, from researching and ideation to now finalizing our high-fidelity working prototype. Try it out <a href="https://www.figma.com/proto/wjOsPYtkmrWOpN7JYl7fLY/gbda-210-high-fidelity-prototyping?node-id=10-3&t=fqR6IpapXdcbXwG0-1" target="_blank">
-              here!</a>
-          </p>
-        </div>
         </div>
 
         <div class="contact" id="contact">
-         <div class="contact-row">
-           
+          <div class="contact-row">
+
             <div class="contact-row-item">
               <img src="contact.png" alt="globe icon">
             </div>
@@ -745,22 +742,18 @@
               </h2>
               <p>
                 Like my work? Send me a message!
-             <br><br>
-          <a href="https://www.linkedin.com/in/anna-dai-398b0b276/">   &nbsp;LinkedIn &nbsp;</a>
-    <br>
-           <a href="mailto:a34dai@uwaterloo.ca">      &nbsp; a34dai@uwaterloo.ca &nbsp;</a>  
-             <br>
+                <br><br>
+                <a href="https://www.linkedin.com/in/anna-dai-398b0b276/"> &nbsp;LinkedIn &nbsp;</a>
+                <br>
+                <a href="mailto:a34dai@uwaterloo.ca"> &nbsp; a34dai@uwaterloo.ca &nbsp;</a>
+                <br>
                 <a href="https://www.instagram.com/ann3r_/"> &nbsp; @ann3r_&nbsp;</a>
               </p>
-              
-              
-              
-
             </div>
 
           </div>
         </div>
-        
+
       </div>
 
     </div>
